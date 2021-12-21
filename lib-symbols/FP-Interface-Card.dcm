@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DRV8835DSSR
+D Dual H-Bridge Motor Driver
+K H-bridge motor driver
+$ENDCMP
+#
+#End Doc Library
