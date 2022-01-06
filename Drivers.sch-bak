@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 6
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -808,4 +808,6 @@ Text Label 9850 7300 0    50   ~ 0
 Wheel_3_Out_2
 Text Notes 9400 8350 0    100  ~ 20
 figure connectors out for torqe rods
+Text Notes 4050 5650 0    50   ~ 0
+change torqer driver to BD6210F-E2\n
 $EndSCHEMATC

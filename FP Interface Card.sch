@@ -600,30 +600,30 @@ Text Label 7350 1950 0    50   ~ 0
 USB_D+
 Text Label 7350 2100 0    50   ~ 0
 USB_D-
-Text Notes 12400 2750 0    100  ~ 20
-Magnotorqer Driver (based on sparkfun ROB-13911)
-$Sheet
-S 12450 2950 2150 1200
-U 618FB005
-F0 "Drivers" 50
-F1 "Drivers.sch" 50
-$EndSheet
+Text Notes 9700 1150 0    100  ~ 20
+OpenMV H7 Plus Interface
 $Sheet
 S 9750 1300 1300 900 
 U 6190A838
 F0 "OpenMV H7 Plus" 50
 F1 "OpenMV H7 Plus.sch" 50
 $EndSheet
-Text Notes 9700 1150 0    100  ~ 20
-OpenMV H7 Plus Interface
 Text Notes 5800 5250 0    100  ~ 20
 Bus Protection
-Text Notes 9700 4550 0    100  ~ 20
-IMUs
 $Sheet
-S 9850 5100 2200 1550
+S 12100 1300 2150 1200
+U 618FB005
+F0 "Drivers" 50
+F1 "Drivers.sch" 50
+$EndSheet
+Text Notes 12050 1100 0    100  ~ 20
+Magnotorqer Driver (based on sparkfun ROB-13911)
+$Sheet
+S 9750 2850 2200 1550
 U 61C3235C
 F0 "BLDC_Wheel_Driver" 50
 F1 "BLDC_Wheel_Driver.sch" 50
 $EndSheet
+Text Notes 9750 2650 0    100  ~ 20
+IMUs
 $EndSCHEMATC
