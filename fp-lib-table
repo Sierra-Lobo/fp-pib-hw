@@ -1,6 +1,4 @@
 (fp_lib_table
   (lib (name "SLI-Backplane-Blank-Card-KiCad")(type "KiCad")(uri "${KIPRJMOD}/lib-footprints/SLI-Backplane-Blank-Card-KiCad.pretty")(options "")(descr ""))
-  (lib (name "mainboard")(type "KiCad")(uri "${KIPRJMOD}/lib-footprints/mainboard.pretty")(options "")(descr ""))
-  (lib (name "foras-promineo-payload-interface-hwforas-promineo-payload-interface-hw.pretty")(type "KiCad")(uri "${KIPRJMOD}/lib-footprints/foras-promineo-payload-interface-hw.pretty")(options "")(descr ""))
-  (lib (name "payload-interface-board")(type "KiCad")(uri "${KIPRJMOD}/payload-interface-board.pretty")(options "")(descr ""))
+  (lib (name "payload-interface-board")(type "KiCad")(uri "${KIPRJMOD}/lib-footprints/payload-interface-board.pretty")(options "")(descr ""))
 )

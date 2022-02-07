@@ -1,6 +1,3 @@
 (sym_lib_table
-  (lib (name SLI-Backplane-Blank-Card-KiCad)(type Legacy)(uri ${KIPRJMOD}/lib-symbols/SLI-Backplane-Blank-Card-KiCad.lib)(options "")(descr ""))
-  (lib (name CubeSat_Backplane_KiCad)(type Legacy)(uri ${KIPRJMOD}/lib-symbols/CubeSat_Backplane_KiCad/CubeSat_Backplane_KiCad.lib)(options "")(descr ""))
-  (lib (name mainboard)(type Legacy)(uri ${KIPRJMOD}/lib-symbols/mainboard.lib)(options "")(descr ""))
-  (lib (name FP-Interface-Card)(type Legacy)(uri ${KIPRJMOD}/lib-symbols/FP-Interface-Card.lib)(options "")(descr ""))
+  (lib (name "SLI-Backplane-Blank-Card-KiCad")(type "Legacy")(uri "${KIPRJMOD}/lib-symbols/SLI-Backplane-Blank-Card-KiCad.lib")(options "")(descr ""))
 )
