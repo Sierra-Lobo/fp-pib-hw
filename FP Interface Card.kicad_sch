@@ -3673,6 +3673,22 @@
     (pin "3" (uuid cdd42cb8-ead0-4737-ab17-eae6bdd72f23))
   )
 
+  (symbol (lib_id "power:+5V") (at 328.93 52.07 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 800e4b03-3f41-427c-8741-99a61b567cb8)
+    (property "Reference" "#PWR?" (id 0) (at 328.93 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (id 1) (at 328.93 48.4655 0))
+    (property "Footprint" "" (id 2) (at 328.93 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 328.93 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid adc99d30-654f-450a-bbee-2e855bf37d09))
+  )
+
   (symbol (lib_id "Device:R") (at 322.58 158.115 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 81afa7a9-8a41-4582-9ed0-fdc9f34e088a)
@@ -4066,6 +4082,9 @@
     )
     (path "/d7b7f2ab-1a3d-4b88-9f92-3b913fd5dc31"
       (reference "#PWR012") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/800e4b03-3f41-427c-8741-99a61b567cb8"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061d3502c/00000000-0000-0000-0000-000061df4655"
       (reference "C1") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0402_1005Metric")
