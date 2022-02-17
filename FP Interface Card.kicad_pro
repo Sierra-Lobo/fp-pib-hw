@@ -440,6 +440,18 @@
     [
       "00000000-0000-0000-0000-000061d3502c",
       "Blank-Card-Default"
+    ],
+    [
+      "598f4529-df2c-4919-a701-d82b23d8a129",
+      "IMU"
+    ],
+    [
+      "66fbc293-b490-4097-aa2e-a081509eef04",
+      "Magnetotorquer Drivers"
+    ],
+    [
+      "51f2d4b3-6068-40f6-b19f-12cc4569573f",
+      "I2C-Protection"
     ]
   ],
   "text_variables": {}
