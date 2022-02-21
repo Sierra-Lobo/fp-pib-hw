@@ -106,16 +106,16 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.127,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_clearance": 0.2032,
+        "min_copper_edge_clearance": 0.254,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.127,
-        "min_track_width": 0.19999999999999998,
-        "min_via_annular_width": 0.049999999999999996,
+        "min_track_width": 0.2032,
+        "min_via_annular_width": 0.0508,
         "min_via_diameter": 0.254,
         "use_height_for_length_calcs": true
       },
@@ -124,7 +124,8 @@
         0.2032,
         0.254,
         0.381,
-        0.508
+        0.508,
+        0.635
       ],
       "via_dimensions": [
         {
@@ -133,7 +134,7 @@
         },
         {
           "diameter": 0.381,
-          "drill": 0.1524
+          "drill": 0.254
         }
       ],
       "zones_allow_external_fillets": false,
@@ -438,6 +439,10 @@
       ""
     ],
     [
+      "5b8330c6-72aa-4625-a65f-d4d55ae3e3e8",
+      "Full Bridge 2"
+    ],
+    [
       "00000000-0000-0000-0000-000061d3502c",
       "Blank-Card-Default"
     ],
@@ -451,7 +456,63 @@
     ],
     [
       "51f2d4b3-6068-40f6-b19f-12cc4569573f",
-      "I2C-Protection"
+      "I2C-Protection-2"
+    ],
+    [
+      "e1ca2fa4-878d-4b56-b8ce-583c4e6d5869",
+      "Full Bridge 1"
+    ],
+    [
+      "b12d78bf-aa15-467a-b4b1-b3adfb073398",
+      "Sense Amp 1"
+    ],
+    [
+      "c0544bb0-133b-49a1-b8f9-e77504492c11",
+      "Sense Amp 2"
+    ],
+    [
+      "09e89dab-acb9-41af-be20-2de645189f17",
+      "Full Bridge 3"
+    ],
+    [
+      "055667d1-a090-4d44-b096-566c0357f041",
+      "Sense Amp 3"
+    ],
+    [
+      "40d50524-0381-46a3-a364-2ddf4e5ce3b7",
+      "Level Shifter 2"
+    ],
+    [
+      "c0f6a899-73b7-436c-a5dc-82fa18725b81",
+      "Level Shifter 1"
+    ],
+    [
+      "5a02ff72-8bce-4543-8d4f-c7c01c7d2c3f",
+      "Level Shifter 3"
+    ],
+    [
+      "a0d795c1-96ba-4546-8eb9-7221f7be7211",
+      "Level Shifter 4"
+    ],
+    [
+      "0d41b933-8bc8-4fa4-b49a-44e034cc3fe8",
+      "5V Amp 2"
+    ],
+    [
+      "c3b42a4a-1ed4-4106-b1d3-48a0726c5c74",
+      "5V Amp 1"
+    ],
+    [
+      "3274ec9e-d72c-43b3-8471-ed8a89a9c8d1",
+      "5V Amp 3"
+    ],
+    [
+      "60a3e3f0-4d0a-42d5-9dae-542c30f8587f",
+      "I2C-Protection-1"
+    ],
+    [
+      "a9898807-7e58-4348-99a0-c86d6ec5e1ed",
+      "RockBLOCKmk2"
     ]
   ],
   "text_variables": {}
