@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 44,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_nets": [
@@ -19,7 +19,7 @@
       "dimensions": true,
       "footprints": true,
       "graphics": true,
-      "keepouts": true,
+      "keepouts": false,
       "lockedItems": false,
       "otherItems": true,
       "pads": true,
@@ -67,7 +67,7 @@
       36
     ],
     "visible_layers": "0001000_80000005",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "FP Interface Card.kicad_prl",
