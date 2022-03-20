@@ -1027,7 +1027,6 @@
   )
 
   (no_connect (at 344.17 151.13) (uuid 86d3cdc3-ef3a-4516-903c-dcc8ba7c6b4c))
-  (no_connect (at 96.52 162.56) (uuid a0f4c6ae-ee0a-40ac-9520-8273744c4ec2))
   (no_connect (at 92.71 49.53) (uuid f537a9fa-6755-4975-81fa-8afc7b02f1e5))
 
   (wire (pts (xy 45.72 41.91) (xy 45.72 43.18))
@@ -2880,6 +2879,10 @@
     (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
     (uuid 149ed4bc-6bbd-413d-8cf5-f4913734ff4b)
   )
+  (text "snagging this off here saves mainboard IO" (at 95.25 165.1 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1872c076-e6fe-42ff-892f-f87d72c8accb)
+  )
   (text "update me!" (at 245.11 223.52 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1f6238ec-923f-4d9f-921c-92a2abdb009a)
@@ -3271,6 +3274,10 @@
     (uuid fc374edd-c91e-41c1-a2c4-eb086917ba2d)
   )
 
+  (hierarchical_label "Ball_Deploy" (shape input) (at 96.52 162.56 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 032a1bed-7924-4a2e-8e1e-bd27e706e740)
+  )
   (hierarchical_label "SCL" (shape input) (at 24.13 104.14 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 20efbdbc-fbfb-45d5-a89a-3c4e847a7541)

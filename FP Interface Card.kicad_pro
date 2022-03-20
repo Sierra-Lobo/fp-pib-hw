@@ -451,20 +451,16 @@
       "IMU"
     ],
     [
-      "66fbc293-b490-4097-aa2e-a081509eef04",
-      "Magnetotorquer Drivers"
-    ],
-    [
       "51f2d4b3-6068-40f6-b19f-12cc4569573f",
       "I2C-Protection-2"
     ],
     [
-      "e1ca2fa4-878d-4b56-b8ce-583c4e6d5869",
-      "Full Bridge 1"
+      "66fbc293-b490-4097-aa2e-a081509eef04",
+      "Magnetotorquer Drivers"
     ],
     [
-      "055667d1-a090-4d44-b096-566c0357f041",
-      "Sense Amp 3"
+      "e1ca2fa4-878d-4b56-b8ce-583c4e6d5869",
+      "Full Bridge 1"
     ],
     [
       "b12d78bf-aa15-467a-b4b1-b3adfb073398",
@@ -475,16 +471,28 @@
       "Sense Amp 2"
     ],
     [
+      "055667d1-a090-4d44-b096-566c0357f041",
+      "Sense Amp 3"
+    ],
+    [
       "09e89dab-acb9-41af-be20-2de645189f17",
       "Full Bridge 3"
     ],
     [
-      "40d50524-0381-46a3-a364-2ddf4e5ce3b7",
-      "Level Shifter 2"
+      "755131e0-78d1-4e70-9341-54dc3a448de6",
+      "Level Shifter 5"
     ],
     [
-      "a0d795c1-96ba-4546-8eb9-7221f7be7211",
-      "Level Shifter 4"
+      "b25b1fc4-9b74-4971-af14-92d742260939",
+      "Level Shifter 8"
+    ],
+    [
+      "ff9fb140-2bce-4995-b55d-7f00c31ca71c",
+      "Level Shifter 6"
+    ],
+    [
+      "40d50524-0381-46a3-a364-2ddf4e5ce3b7",
+      "Level Shifter 2"
     ],
     [
       "c0f6a899-73b7-436c-a5dc-82fa18725b81",
@@ -495,28 +503,28 @@
       "Level Shifter 3"
     ],
     [
-      "0d41b933-8bc8-4fa4-b49a-44e034cc3fe8",
-      "5V Amp 2"
+      "b22d50f0-9b2f-45cc-aad3-cae95b472582",
+      "Ball Deployer"
     ],
     [
       "c3b42a4a-1ed4-4106-b1d3-48a0726c5c74",
       "5V Amp 1"
     ],
     [
-      "60a3e3f0-4d0a-42d5-9dae-542c30f8587f",
-      "I2C-Protection-1"
+      "a0d795c1-96ba-4546-8eb9-7221f7be7211",
+      "Level Shifter 4"
+    ],
+    [
+      "0d41b933-8bc8-4fa4-b49a-44e034cc3fe8",
+      "5V Amp 2"
     ],
     [
       "3274ec9e-d72c-43b3-8471-ed8a89a9c8d1",
       "5V Amp 3"
     ],
     [
-      "755131e0-78d1-4e70-9341-54dc3a448de6",
-      "Level Shifter 5"
-    ],
-    [
-      "ff9fb140-2bce-4995-b55d-7f00c31ca71c",
-      "Level Shifter 6"
+      "60a3e3f0-4d0a-42d5-9dae-542c30f8587f",
+      "I2C-Protection-1"
     ],
     [
       "7134e052-9715-4444-b7a0-6121e925c68c",
@@ -525,10 +533,6 @@
     [
       "ecadcaca-1b2c-4004-8fc1-cd2cdd0219cc",
       "Level Shifter 7"
-    ],
-    [
-      "b25b1fc4-9b74-4971-af14-92d742260939",
-      "Level Shifter 8"
     ]
   ],
   "text_variables": {}
