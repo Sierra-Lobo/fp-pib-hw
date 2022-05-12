@@ -1767,7 +1767,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e2eaaa)
     (property "Reference" "H1" (id 0) (at 29.1338 97.917 90))
-    (property "Value" "MountingHole_Pad" (id 1) (at 29.1338 97.8916 90)
+    (property "Value" "SLI-Backplane-Blank-Card-KiCad:125mil_hole" (id 1) (at 29.1338 97.8916 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "SLI-Backplane-Blank-Card-KiCad:125mil_hole" (id 2) (at 29.21 101.6 0)

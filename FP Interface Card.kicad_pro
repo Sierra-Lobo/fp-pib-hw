@@ -390,7 +390,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "FP Interface Card.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -463,10 +463,6 @@
       "Full Bridge 1"
     ],
     [
-      "09e89dab-acb9-41af-be20-2de645189f17",
-      "Full Bridge 3"
-    ],
-    [
       "b12d78bf-aa15-467a-b4b1-b3adfb073398",
       "Sense Amp 1"
     ],
@@ -475,12 +471,12 @@
       "Sense Amp 2"
     ],
     [
-      "055667d1-a090-4d44-b096-566c0357f041",
-      "Sense Amp 3"
+      "09e89dab-acb9-41af-be20-2de645189f17",
+      "Full Bridge 3"
     ],
     [
-      "755131e0-78d1-4e70-9341-54dc3a448de6",
-      "Level Shifter 5"
+      "055667d1-a090-4d44-b096-566c0357f041",
+      "Sense Amp 3"
     ],
     [
       "40d50524-0381-46a3-a364-2ddf4e5ce3b7",
@@ -495,20 +491,16 @@
       "Level Shifter 3"
     ],
     [
-      "0d41b933-8bc8-4fa4-b49a-44e034cc3fe8",
-      "5V Amp 2"
-    ],
-    [
       "a0d795c1-96ba-4546-8eb9-7221f7be7211",
       "Level Shifter 4"
     ],
     [
-      "c3b42a4a-1ed4-4106-b1d3-48a0726c5c74",
-      "5V Amp 1"
+      "0d41b933-8bc8-4fa4-b49a-44e034cc3fe8",
+      "5V Amp 2"
     ],
     [
-      "b25b1fc4-9b74-4971-af14-92d742260939",
-      "Level Shifter 8"
+      "c3b42a4a-1ed4-4106-b1d3-48a0726c5c74",
+      "5V Amp 1"
     ],
     [
       "3274ec9e-d72c-43b3-8471-ed8a89a9c8d1",
@@ -519,16 +511,28 @@
       "I2C-Protection-1"
     ],
     [
-      "7134e052-9715-4444-b7a0-6121e925c68c",
-      "Level Shifter 9"
+      "755131e0-78d1-4e70-9341-54dc3a448de6",
+      "Level Shifter 5"
+    ],
+    [
+      "e2189920-1567-452a-a8bb-1216d1f43758",
+      "Level Shifter 7"
     ],
     [
       "ff9fb140-2bce-4995-b55d-7f00c31ca71c",
       "Level Shifter 6"
     ],
     [
-      "ecadcaca-1b2c-4004-8fc1-cd2cdd0219cc",
-      "Level Shifter 7"
+      "f8b36c06-4489-4bf8-840b-dfe33929935e",
+      "Level Shifter 9"
+    ],
+    [
+      "8b43d751-26eb-4c77-8b11-21536a6f542b",
+      "Level Shifter 8"
+    ],
+    [
+      "dd622a02-7df1-4bf4-8b18-36d28830c650",
+      "Pico"
     ]
   ],
   "text_variables": {}
