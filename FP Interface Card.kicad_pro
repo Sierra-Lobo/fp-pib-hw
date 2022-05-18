@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.175,
-          "height": 5.08,
-          "width": 5.08
+          "drill": 0.0,
+          "height": 1.05,
+          "width": 1.4
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -55,7 +55,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "items_not_allowed|2924000|-21405000|40bf3233-914a-4857-929d-d88fa018ed34|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|2924000|-26855000|93e36607-b3d7-4365-a5f5-48040cbbd0a2|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|5954000|-21705000|6df25c70-4e8f-4faf-9a02-ca7ebd1c2c1a|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|5954000|-26555000|7c07bab4-8107-4108-824b-29792954e53d|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -63,8 +68,8 @@
       "rule_severities": {
         "annular_width": "error",
         "clearance": "error",
-        "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "copper_edge_clearance": "ignore",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -106,7 +111,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.2032,
+        "min_clearance": 0.15239999999999998,
         "min_copper_edge_clearance": 0.254,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.254,
@@ -133,8 +138,12 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.381,
+          "diameter": 0.508,
           "drill": 0.254
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
