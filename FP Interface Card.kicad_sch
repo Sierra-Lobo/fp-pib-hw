@@ -3272,6 +3272,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ee297360-cfc0-47a6-ba40-2089f9b3bf33)
   )
+  (text "MAKE A UART PROTECTION CIRCUIT" (at 123.19 226.06 0)
+    (effects (font (size 3 3) (thickness 0.6) bold) (justify left bottom))
+    (uuid ef403a2a-6a38-46ba-9a88-69127c4ace34)
+  )
   (text "I2C PROTECTION" (at 144.78 97.79 0)
     (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
     (uuid efbe1059-177b-4b2c-a66f-05111d202b75)
@@ -4625,10 +4629,10 @@
     (property "Datasheet" "" (id 3) (at 312.42 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f3259))
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f3259))
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f3259))
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f3259))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f325f))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f325f))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f325f))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f325f))
   )
 
   (symbol (lib_id "Device:Q_NPN_BEC") (at 154.94 194.31 0) (unit 1)
@@ -5798,6 +5802,24 @@
     (path "/16934975-ff78-46e1-bdb6-61d1f8d5b0bc"
       (reference "#PWR0130") (unit 1) (value "+5V") (footprint "")
     )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/cef6bc38-b409-4d11-9d9d-66f5cdf820a8"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/da64b43d-1777-42fd-aa6c-83f1693f3a75"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17/eefbac55-befa-41d4-8e97-8e8daa199c09"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8/eefbac55-befa-41d4-8e97-8e8daa199c09"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869/eefbac55-befa-41d4-8e97-8e8daa199c09"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/f843106b-fd17-4228-bad0-d75a9c91031e"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/598f4529-df2c-4919-a701-d82b23d8a129/9add4c13-659d-4245-a94b-1f7557a8d341"
       (reference "#SUPPLY01") (unit 1) (value "3.3V") (footprint "")
     )
@@ -6538,6 +6560,18 @@
     )
     (path "/ff9fb140-2bce-4995-b55d-7f00c31ca71c/2498fd70-6143-4da6-96c4-c0b591c221ef"
       (reference "R116") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/81e38486-2d79-4f20-8e68-ccba86566838"
+      (reference "R?") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8/8613a8e6-b3a5-4cc5-9e3a-95a048d4aa21"
+      (reference "R?") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869/8613a8e6-b3a5-4cc5-9e3a-95a048d4aa21"
+      (reference "R?") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17/8613a8e6-b3a5-4cc5-9e3a-95a048d4aa21"
+      (reference "R?") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/66fbc293-b490-4097-aa2e-a081509eef04/0d41b933-8bc8-4fa4-b49a-44e034cc3fe8/d864aed9-fd97-43df-a424-d72767de2e57"
       (reference "RN1") (unit 1) (value "MAX5490GC01000+T") (footprint "Package_TO_SOT_SMD:SOT-23")
