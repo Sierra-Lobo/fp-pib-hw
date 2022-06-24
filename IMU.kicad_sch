@@ -5,23 +5,29 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "mainboard-rescue:C-Device-mainboard-rescue" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 0.635 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "C-Device-mainboard-rescue" (id 1) (at 0.635 -2.54 0)
+      (property "Value" "C" (id 1) (at 0.635 -2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "" (id 2) (at 0.9652 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "C_*" (id 4) (at 0 0 0)
+      (property "ki_keywords" "cap capacitor" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "C-Device-mainboard-rescue_0_1"
+      (property "ki_description" "Unpolarized capacitor" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "C_*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_0_1"
         (polyline
           (pts
             (xy -2.032 -0.762)
@@ -39,7 +45,7 @@
           (fill (type none))
         )
       )
-      (symbol "C-Device-mainboard-rescue_1_1"
+      (symbol "C_1_1"
         (pin passive line (at 0 3.81 270) (length 2.794)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -50,23 +56,29 @@
         )
       )
     )
-    (symbol "mainboard-rescue:R_US-Device-mainboard-rescue" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "Device:R_US" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "R" (id 0) (at 2.54 0 90)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "R_US-Device-mainboard-rescue" (id 1) (at -2.54 0 90)
+      (property "Value" "R_US" (id 1) (at -2.54 0 90)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 1.016 -0.254 90)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "R_*" (id 4) (at 0 0 0)
+      (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "R_US-Device-mainboard-rescue_0_1"
+      (property "ki_description" "Resistor, US symbol" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_US_0_1"
         (polyline
           (pts
             (xy 0 -2.286)
@@ -117,7 +129,7 @@
           (fill (type none))
         )
       )
-      (symbol "R_US-Device-mainboard-rescue_1_1"
+      (symbol "R_US_1_1"
         (pin passive line (at 0 3.81 270) (length 1.27)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -1160,7 +1172,7 @@
     (pin "1" (uuid 1ba01dbc-6227-422d-8404-4b9d16e4915e))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 43.18 106.68 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 43.18 106.68 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 08c3bc8c-074c-4514-a20e-6975432e110f)
     (property "Reference" "C17" (id 0) (at 46.101 105.5116 0)
@@ -1208,7 +1220,7 @@
     (pin "9" (uuid 9eacdc39-5423-4e34-97fc-b256bf00b06d))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 104.14 43.18 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 104.14 43.18 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 0a89fe9b-59bf-482c-9d98-b31adc7269fb)
     (property "Reference" "C24" (id 0) (at 107.061 42.0116 0)
@@ -1227,7 +1239,7 @@
     (pin "2" (uuid 3e803eba-8186-424f-b068-34ca56535b22))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 146.05 157.48 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 146.05 157.48 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 0e9710db-d3aa-4c10-b861-298670fbc9da)
     (property "Reference" "R23" (id 0) (at 147.7772 156.3116 0)
@@ -1352,7 +1364,7 @@
     (pin "9" (uuid 83b27793-4f97-476c-8d0a-445db263ef83))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 31.75 106.68 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 31.75 106.68 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 28c664da-10f1-4244-b88c-844480703456)
     (property "Reference" "C14" (id 0) (at 34.671 105.5116 0)
@@ -1389,7 +1401,7 @@
     (pin "1" (uuid 9b9687a9-2253-4487-964a-4d0a5ca7d87f))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 157.48 45.72 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 157.48 45.72 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2e3bcf61-c850-4961-a682-3af35359032b)
     (property "Reference" "C28" (id 0) (at 160.401 44.5516 0)
@@ -1462,7 +1474,7 @@
     (pin "1" (uuid d8d75485-a181-4f40-a50f-290b2eacdce8))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 138.43 154.94 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 138.43 154.94 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3bd05ce4-a16c-4322-bba9-845ead20a993)
     (property "Reference" "R22" (id 0) (at 140.1572 153.7716 0)
@@ -1481,7 +1493,7 @@
     (pin "2" (uuid f39bbc92-bc7b-4195-af1f-1e21bdf48c8c))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 53.34 33.02 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 53.34 33.02 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3c08a288-54ef-4930-aaa4-9ec3ea30fbf8)
     (property "Reference" "C20" (id 0) (at 56.261 31.8516 0)
@@ -1554,7 +1566,7 @@
     (pin "1" (uuid d4060a78-5c9d-4ce9-a237-02bbc00b3567))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 110.49 144.78 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 110.49 144.78 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 56e73e04-f4c6-40a0-993c-1e1cd40786a2)
     (property "Reference" "R18" (id 0) (at 112.2172 143.6116 0)
@@ -1573,7 +1585,7 @@
     (pin "2" (uuid cb40dc75-84f7-45e8-854c-ef5b9bcdbb13))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 124.46 179.07 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 124.46 179.07 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5b119ca8-d266-4655-bee3-abd411a3676b)
     (property "Reference" "R20" (id 0) (at 126.1872 177.9016 0)
@@ -1610,7 +1622,7 @@
     (pin "1" (uuid 5f7418eb-362f-407c-8ca9-b0955aa70fba))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 55.88 161.29 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 55.88 161.29 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5e096423-b60b-41a2-9221-f41b08498bfc)
     (property "Reference" "R16" (id 0) (at 49.53 160.02 0)
@@ -1629,7 +1641,7 @@
     (pin "2" (uuid 30d77cc0-9fee-44cb-926a-15481c129c6b))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 53.34 110.49 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 53.34 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6a7410ac-6f2d-41b6-9ae5-119b71f0d7e5)
     (property "Reference" "C21" (id 0) (at 56.261 109.3216 0)
@@ -1666,7 +1678,7 @@
     (pin "1" (uuid 34029f0e-f900-4d7a-9828-197bbcb8268d))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 60.96 161.29 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 60.96 161.29 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6f5ffd7e-5080-443b-90ee-c731c918df31)
     (property "Reference" "R17" (id 0) (at 62.6872 160.1216 0)
@@ -1703,7 +1715,7 @@
     (pin "1" (uuid cb9486bb-cb13-4283-b468-0de193564387))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 54.61 52.07 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 54.61 52.07 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 75ad3daa-2ea8-4a79-87b8-4894afa5800d)
     (property "Reference" "C22" (id 0) (at 57.531 50.9016 0)
@@ -1722,7 +1734,7 @@
     (pin "2" (uuid 90cb4430-e3f6-4845-a656-f54c125e5aa5))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 33.02 48.26 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 33.02 48.26 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 7b1a65f0-3824-481f-847a-6a6d5a01f5a0)
     (property "Reference" "C15" (id 0) (at 35.941 47.0916 0)
@@ -1741,7 +1753,7 @@
     (pin "2" (uuid bcf55e80-256f-4b8f-baf1-67feda44bef2))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 44.45 48.26 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 44.45 48.26 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 7b3d7643-6e3b-4562-a7ee-77029d04d708)
     (property "Reference" "C18" (id 0) (at 47.371 47.0916 0)
@@ -1760,7 +1772,7 @@
     (pin "2" (uuid 0c5cda09-a218-4e8f-92e6-dcad03e19f75))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 114.3 49.53 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 114.3 49.53 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 7efbb406-d445-4109-b6da-573057ce7536)
     (property "Reference" "C26" (id 0) (at 117.221 48.3616 0)
@@ -1946,7 +1958,7 @@
     (pin "1" (uuid 26b9e817-9edd-4e51-8772-fce1330b2b89))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 52.07 91.44 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 52.07 91.44 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a233cd62-f204-4e4b-9da4-1e0c38c8a7ab)
     (property "Reference" "C19" (id 0) (at 54.991 90.2716 0)
@@ -1983,7 +1995,7 @@
     (pin "1" (uuid ceff1def-bbe1-4512-a6d7-f3869f052039))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 113.03 107.95 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 113.03 107.95 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a802c581-82e1-4dd4-a861-d048bfd4ad43)
     (property "Reference" "C25" (id 0) (at 115.951 106.7816 0)
@@ -2020,7 +2032,7 @@
     (pin "1" (uuid 4d311328-492e-47d3-9270-3c2077f73228))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 102.87 101.6 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 102.87 101.6 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a908c14e-8db0-43d6-ad9e-7bc7cd7d2260)
     (property "Reference" "C23" (id 0) (at 105.791 100.4316 0)
@@ -2156,7 +2168,7 @@
     (pin "9" (uuid 8f07aa90-cd3b-43e7-87c6-9d611cdee86c))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 125.73 149.86 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 125.73 149.86 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid bd994d05-0a86-4dc4-96d9-b73ccb7fcf84)
     (property "Reference" "R21" (id 0) (at 127.4572 148.6916 0)
@@ -2211,7 +2223,7 @@
     (pin "1" (uuid 3107883c-3dd4-4f1d-9bea-f1c2b29f0c8e))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 156.21 104.14 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 156.21 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c95b1c20-2052-4a82-9eda-ca9913f1f1b1)
     (property "Reference" "C27" (id 0) (at 159.131 102.9716 0)
@@ -2230,7 +2242,7 @@
     (pin "2" (uuid 51bb1c8d-78ec-4290-a93e-a43f4c748f96))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 153.67 160.02 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 153.67 160.02 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d0064f4c-eaa8-4fc1-8c95-5edfe18ce9e5)
     (property "Reference" "R24" (id 0) (at 155.3972 158.8516 0)
@@ -2357,7 +2369,7 @@
     (pin "1" (uuid 28993a00-5011-4c6b-8746-e9b8f708df33))
   )
 
-  (symbol (lib_id "mainboard-rescue:C-Device-mainboard-rescue") (at 40.64 158.75 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 40.64 158.75 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f8e9cb8d-2c46-4510-aebb-b7e519031213)
     (property "Reference" "C16" (id 0) (at 43.561 157.5816 0)
@@ -2394,7 +2406,7 @@
     (pin "1" (uuid ef50041d-5440-4159-ba33-12caf95c2f3f))
   )
 
-  (symbol (lib_id "mainboard-rescue:R_US-Device-mainboard-rescue") (at 118.11 147.32 0) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 118.11 147.32 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid fc27028d-8971-45c6-a024-a9ec464cd7a7)
     (property "Reference" "R19" (id 0) (at 119.8372 146.1516 0)

@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "(6.0.5)"
     },
-    "CreationDate": "2022-05-20T09:36:28-04:00"
+    "CreationDate": "2022-06-17T13:42:06-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -45,57 +45,67 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "FP Interface Card-F_Cu.gbr",
+      "Path": "FP Interface Card-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-In1_Cu.gbr",
+      "Path": "FP Interface Card-In1_Cu.g2",
       "FileFunction": "Copper,L2,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-In2_Cu.gbr",
+      "Path": "FP Interface Card-In2_Cu.g3",
       "FileFunction": "Copper,L3,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-In3_Cu.gbr",
+      "Path": "FP Interface Card-In3_Cu.g4",
       "FileFunction": "Copper,L4,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-In4_Cu.gbr",
+      "Path": "FP Interface Card-In4_Cu.g5",
       "FileFunction": "Copper,L5,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-B_Cu.gbr",
+      "Path": "FP Interface Card-B_Cu.gbl",
       "FileFunction": "Copper,L6,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-F_Silkscreen.gbr",
+      "Path": "FP Interface Card-F_Paste.gtp",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FP Interface Card-B_Paste.gbp",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FP Interface Card-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-B_Silkscreen.gbr",
+      "Path": "FP Interface Card-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "FP Interface Card-F_Mask.gbr",
+      "Path": "FP Interface Card-F_Mask.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "FP Interface Card-B_Mask.gbr",
+      "Path": "FP Interface Card-B_Mask.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "FP Interface Card-Edge_Cuts.gbr",
+      "Path": "FP Interface Card-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
@@ -103,89 +113,80 @@
   "MaterialStackup": [
     {
       "Type": "Legend",
-      "Color": "White",
       "Name": "Top Silk Screen"
     },
     {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
       "Type": "SolderMask",
-      "Color": "Green",
-      "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "F.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.274,
       "Material": "FR4",
       "Name": "F.Cu/In1.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to In1.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "In1.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.274,
       "Material": "FR4",
       "Name": "In1.Cu/In2.Cu",
       "Notes": "Type: dielectric layer 2 (from In1.Cu to In2.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "In2.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.274,
       "Material": "FR4",
       "Name": "In2.Cu/In3.Cu",
       "Notes": "Type: dielectric layer 3 (from In2.Cu to In3.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "In3.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.274,
       "Material": "FR4",
       "Name": "In3.Cu/In4.Cu",
       "Notes": "Type: dielectric layer 4 (from In3.Cu to In4.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "In4.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.274,
       "Material": "FR4",
       "Name": "In4.Cu/B.Cu",
       "Notes": "Type: dielectric layer 5 (from In4.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "B.Cu"
     },
     {
       "Type": "SolderMask",
-      "Color": "Green",
-      "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
     {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
       "Type": "Legend",
-      "Color": "White",
       "Name": "Bottom Silk Screen"
     }
   ]
