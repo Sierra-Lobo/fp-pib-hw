@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name "SLI-Backplane-Blank-Card-KiCad")(type "KiCad")(uri "${KIPRJMOD}/lib-footprints/SLI-Backplane-Blank-Card-KiCad.pretty")(options "")(descr ""))
-  (lib (name "payload-interface-board")(type "KiCad")(uri "${KIPRJMOD}/lib-footprints/payload-interface-board.pretty")(options "")(descr ""))
-  (lib (name "RPi_Pico")(type "KiCad")(uri "${KIPRJMOD}/lib-footprints/RPi_Pico.pretty")(options "")(descr ""))
-)
