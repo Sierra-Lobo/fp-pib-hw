@@ -751,7 +751,7 @@
     (property "Reference" "R111" (at 101.6 91.4399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100k" (at 101.6 93.9799 0)
+    (property "Value" "10Meg" (at 101.6 93.9799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 100.076 92.964 90)
