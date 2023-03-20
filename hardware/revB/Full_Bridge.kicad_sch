@@ -387,15 +387,7 @@
     (uuid 01ea632a-447c-48b7-81c7-a36b38330fde)
   )
 
-  (wire (pts (xy 111.76 91.44) (xy 114.3 91.44))
-    (stroke (width 0) (type default))
-    (uuid 160b942e-18e3-4be8-aad2-1bde07f8a897)
-  )
-  (wire (pts (xy 111.76 93.98) (xy 114.3 93.98))
-    (stroke (width 0) (type default))
-    (uuid 180fa318-31ee-4a77-af0a-4ce31f328e0a)
-  )
-  (wire (pts (xy 121.92 91.44) (xy 124.46 91.44))
+  (wire (pts (xy 111.76 91.44) (xy 124.46 91.44))
     (stroke (width 0) (type default))
     (uuid 184eb276-7af8-4f9d-b232-4494c69b00fb)
   )
@@ -423,7 +415,7 @@
     (stroke (width 0) (type default))
     (uuid 5c16d543-9aae-4f3a-a222-cbb9a0abba62)
   )
-  (wire (pts (xy 121.92 93.98) (xy 124.46 93.98))
+  (wire (pts (xy 111.76 93.98) (xy 124.46 93.98))
     (stroke (width 0) (type default))
     (uuid 6836dcb6-0a8c-448c-8805-6996b99ae77c)
   )
@@ -465,11 +457,7 @@
     (stroke (width 0) (type default))
     (uuid b90c5e3e-9cc8-426a-b3ba-50d780fcfdab)
   )
-  (wire (pts (xy 121.92 88.9) (xy 124.46 88.9))
-    (stroke (width 0) (type default))
-    (uuid c28a3836-d679-4e30-b081-74641a01fed7)
-  )
-  (wire (pts (xy 99.06 88.9) (xy 114.3 88.9))
+  (wire (pts (xy 99.06 88.9) (xy 124.46 88.9))
     (stroke (width 0) (type default))
     (uuid ca895078-8d91-42bd-91a8-0f9fa677b794)
   )
@@ -519,7 +507,7 @@
   (symbol (lib_id "power:GND") (at 80.01 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0a0299ef-bf35-4d8e-8270-06a73bcaf7a7)
-    (property "Reference" "#PWR044" (at 80.01 95.25 0)
+    (property "Reference" "#PWR075" (at 80.01 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 80.01 93.4625 0)
@@ -535,13 +523,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR075") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -582,7 +570,7 @@
   (symbol (lib_id "Device:C") (at 80.01 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 30cc1bc8-edfc-411b-a620-55f3e52d1442)
-    (property "Reference" "C49" (at 82.931 84.1815 0)
+    (property "Reference" "C35" (at 82.931 84.1815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 82.931 86.9566 0)
@@ -599,45 +587,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "C49") (unit 1)
+          (reference "C35") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "C1") (unit 1)
+          (reference "C5") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "C56") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_US") (at 118.11 91.44 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 31fecab9-7718-482e-a805-7f68b0ac4f39)
-    (property "Reference" "R60" (at 114.3 90.17 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1k" (at 121.92 90.17 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 118.364 90.424 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 118.11 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 00a9b116-8a00-448f-8431-b4f00f716a8e))
-    (pin "2" (uuid f5ffbd3a-4751-40bb-bddd-4dbbb8192fe0))
-    (instances
-      (project "FP Interface Card"
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "R60") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "R2") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "R63") (unit 1)
+          (reference "C40") (unit 1)
         )
       )
     )
@@ -646,7 +602,7 @@
   (symbol (lib_id "power:GND") (at 147.32 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 670d398b-a026-4319-88ef-354daf94f43b)
-    (property "Reference" "#PWR045" (at 147.32 102.87 0)
+    (property "Reference" "#PWR077" (at 147.32 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 101.0825 0)
@@ -662,45 +618,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "#PWR054") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_US") (at 118.11 93.98 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8109ab3c-f614-46e2-a701-e862a97e3706)
-    (property "Reference" "R61" (at 114.3 92.71 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1k" (at 121.92 92.71 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 118.364 92.964 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 118.11 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9a3d38bb-117d-4857-8c2d-115ecc4eb772))
-    (pin "2" (uuid 7e3ec80b-349f-44e5-80c4-bee974730225))
-    (instances
-      (project "FP Interface Card"
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "R61") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "R3") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "R64") (unit 1)
+          (reference "#PWR085") (unit 1)
         )
       )
     )
@@ -709,7 +633,7 @@
   (symbol (lib_id "magnetotorquer-test-board:DRV8838DSGT") (at 134.62 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 827fc6bf-9a88-4e5e-b01a-61a89260276a)
-    (property "Reference" "U16" (at 134.62 73.5035 0)
+    (property "Reference" "U14" (at 134.62 73.5035 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DRV8838DSGT" (at 134.62 76.2786 0)
@@ -733,13 +657,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "U16") (unit 1)
+          (reference "U14") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "U1") (unit 1)
+          (reference "U6") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "U19") (unit 1)
+          (reference "U17") (unit 1)
         )
       )
     )
@@ -748,7 +672,7 @@
   (symbol (lib_id "Device:R_US") (at 99.06 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8613a8e6-b3a5-4cc5-9e3a-95a048d4aa21)
-    (property "Reference" "R111" (at 101.6 91.4399 0)
+    (property "Reference" "R68" (at 101.6 91.4399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10Meg" (at 101.6 93.9799 0)
@@ -765,45 +689,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "R111") (unit 1)
+          (reference "R68") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "R103") (unit 1)
+          (reference "R20") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "R112") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_US") (at 118.11 88.9 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 88bd11a6-270d-4702-a54f-d0bed5c97172)
-    (property "Reference" "R59" (at 114.3 87.63 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1k" (at 121.92 87.63 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 118.364 87.884 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 118.11 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3deb3a19-14f1-45ec-b50d-ce7ca26be6ac))
-    (pin "2" (uuid 30b89d76-f430-4e58-b88d-70e26cfa2473))
-    (instances
-      (project "FP Interface Card"
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "R59") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "R1") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "R62") (unit 1)
+          (reference "R72") (unit 1)
         )
       )
     )
@@ -812,7 +704,7 @@
   (symbol (lib_id "power:+3.3V") (at 80.01 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9c18c4e2-b3cd-4c83-9712-2b5e2cef2645)
-    (property "Reference" "#PWR043" (at 80.01 85.09 0)
+    (property "Reference" "#PWR074" (at 80.01 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 80.01 77.6755 0)
@@ -828,13 +720,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR074") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -843,7 +735,7 @@
   (symbol (lib_id "power:GND") (at 99.06 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eefbac55-befa-41d4-8e97-8e8daa199c09)
-    (property "Reference" "#PWR0135" (at 99.06 102.87 0)
+    (property "Reference" "#PWR076" (at 99.06 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 99.06 101.0825 0)
@@ -859,13 +751,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/e1ca2fa4-878d-4b56-b8ce-583c4e6d5869"
-          (reference "#PWR0135") (unit 1)
+          (reference "#PWR076") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/5b8330c6-72aa-4625-a65f-d4d55ae3e3e8"
-          (reference "#PWR0131") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/09e89dab-acb9-41af-be20-2de645189f17"
-          (reference "#PWR0136") (unit 1)
+          (reference "#PWR084") (unit 1)
         )
       )
     )

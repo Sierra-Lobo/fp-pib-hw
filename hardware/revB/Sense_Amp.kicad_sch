@@ -297,7 +297,7 @@
   (symbol (lib_id "Device:C") (at 121.92 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1defc2e4-5893-4667-af1b-a754eb88bc1c)
-    (property "Reference" "C52" (at 124.841 70.2115 0)
+    (property "Reference" "C36" (at 124.841 70.2115 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 124.841 72.9866 0)
@@ -314,13 +314,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/b12d78bf-aa15-467a-b4b1-b3adfb073398"
-          (reference "C52") (unit 1)
+          (reference "C36") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/c0544bb0-133b-49a1-b8f9-e77504492c11"
-          (reference "C54") (unit 1)
+          (reference "C38") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/055667d1-a090-4d44-b096-566c0357f041"
-          (reference "C59") (unit 1)
+          (reference "C41") (unit 1)
         )
       )
     )
@@ -329,7 +329,7 @@
   (symbol (lib_id "power:GND") (at 144.78 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 49a43584-f855-4ce1-bd1c-81109745175f)
-    (property "Reference" "#PWR049" (at 144.78 115.57 0)
+    (property "Reference" "#PWR079" (at 144.78 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 113.7825 0)
@@ -345,13 +345,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/b12d78bf-aa15-467a-b4b1-b3adfb073398"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/c0544bb0-133b-49a1-b8f9-e77504492c11"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/055667d1-a090-4d44-b096-566c0357f041"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
     )
@@ -360,7 +360,7 @@
   (symbol (lib_id "Device:C") (at 130.81 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8fd8e8c9-a9a1-44ef-9e55-5b6d38b2b25f)
-    (property "Reference" "C53" (at 133.731 70.2115 0)
+    (property "Reference" "C37" (at 133.731 70.2115 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 133.731 72.9866 0)
@@ -377,13 +377,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/b12d78bf-aa15-467a-b4b1-b3adfb073398"
-          (reference "C53") (unit 1)
+          (reference "C37") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/c0544bb0-133b-49a1-b8f9-e77504492c11"
-          (reference "C55") (unit 1)
+          (reference "C39") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/055667d1-a090-4d44-b096-566c0357f041"
-          (reference "C60") (unit 1)
+          (reference "C42") (unit 1)
         )
       )
     )
@@ -392,7 +392,7 @@
   (symbol (lib_id "FP-Interface-Card:INA240AxxD") (at 147.32 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid afcb0774-809d-4e84-987f-b4923b190442)
-    (property "Reference" "U17" (at 152.4 91.44 0)
+    (property "Reference" "U15" (at 152.4 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "INA240A3EDRQ1" (at 157.48 93.98 0)
@@ -415,13 +415,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/b12d78bf-aa15-467a-b4b1-b3adfb073398"
-          (reference "U17") (unit 1)
+          (reference "U15") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/c0544bb0-133b-49a1-b8f9-e77504492c11"
-          (reference "U18") (unit 1)
+          (reference "U16") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/055667d1-a090-4d44-b096-566c0357f041"
-          (reference "U20") (unit 1)
+          (reference "U18") (unit 1)
         )
       )
     )
@@ -430,7 +430,7 @@
   (symbol (lib_id "power:GND") (at 121.92 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c64242b5-a87f-41d7-a260-ea8a1cfc7c30)
-    (property "Reference" "#PWR048" (at 121.92 82.55 0)
+    (property "Reference" "#PWR078" (at 121.92 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 80.7625 0)
@@ -446,13 +446,13 @@
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/b12d78bf-aa15-467a-b4b1-b3adfb073398"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/c0544bb0-133b-49a1-b8f9-e77504492c11"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/66fbc293-b490-4097-aa2e-a081509eef04/055667d1-a090-4d44-b096-566c0357f041"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR086") (unit 1)
         )
       )
     )
