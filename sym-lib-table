@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name "SLI-Backplane-Blank-Card-KiCad")(type "Legacy")(uri "${KIPRJMOD}/lib-symbols/SLI-Backplane-Blank-Card-KiCad.lib")(options "")(descr ""))
-  (lib (name "FP-Interface-Card")(type "KiCad")(uri "${KIPRJMOD}/lib-symbols/FP-Interface-Card.kicad_sym")(options "")(descr ""))
-  (lib (name "RPi_Pico")(type "Legacy")(uri "${KIPRJMOD}/lib-symbols/RPi_Pico.lib")(options "")(descr ""))
-)
