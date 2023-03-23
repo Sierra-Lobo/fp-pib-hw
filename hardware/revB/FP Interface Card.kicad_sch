@@ -4903,10 +4903,10 @@
     (property "Datasheet" "" (at 256.54 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328c))
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328c))
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328c))
-    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328c))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328f))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328f))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328f))
+    (pin "1" (uuid bd97bf9c-91ca-413d-a6c1-68b8149f328f))
     (instances
       (project "FP Interface Card"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df"
