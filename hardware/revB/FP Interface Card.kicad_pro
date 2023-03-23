@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.254
+          "min_clearance": 0.0508
         }
       },
       "diff_pair_dimensions": [
@@ -568,6 +568,10 @@
     [
       "3274ec9e-d72c-43b3-8471-ed8a89a9c8d1",
       "5V Amp 3"
+    ],
+    [
+      "320a8e64-419f-4835-b9a3-8fec5eb2b133",
+      "Payload Interface"
     ],
     [
       "60a3e3f0-4d0a-42d5-9dae-542c30f8587f",
