@@ -5,6 +5,7 @@
   (paper "A4")
 
   (title_block
+    (rev "B")
     (company "Sierra Lobo INC")
   )
 
@@ -240,45 +241,6 @@
         (pin input line (at -5.08 0 0) (length 2.54)
           (name "B2" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "mainboard:3.3V" (power) (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "#P+" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "3.3V" (at -1.016 3.556 0)
-        (effects (font (size 1.4986 1.4986)) (justify left bottom))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "3.3V_1_0"
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy -0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin power_in line (at 0 0 90) (length 2.54)
-          (name "3.3V" (effects (font (size 0 0))))
-          (number "1" (effects (font (size 0 0))))
         )
       )
     )
@@ -594,6 +556,58 @@
         )
       )
     )
+    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3.3V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3.3V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3.3V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
   )
 
   (junction (at 120.65 83.82) (diameter 0) (color 0 0 0 0)
@@ -610,6 +624,9 @@
   )
   (junction (at 149.86 93.98) (diameter 0) (color 0 0 0 0)
     (uuid 4c8271da-5f28-48b1-9ffd-6c5bda1e5306)
+  )
+  (junction (at 130.81 68.58) (diameter 0) (color 0 0 0 0)
+    (uuid 524c865a-2f36-4cc2-b72e-5ee312c713ee)
   )
   (junction (at 172.72 92.71) (diameter 0) (color 0 0 0 0)
     (uuid 65884a2f-f070-40f0-9295-e240c2689fce)
@@ -635,20 +652,17 @@
   (junction (at 123.19 121.92) (diameter 0) (color 0 0 0 0)
     (uuid a1dd7930-9377-4200-b99f-7c05c5074ed9)
   )
+  (junction (at 172.72 68.58) (diameter 0) (color 0 0 0 0)
+    (uuid a6360392-e2d6-462c-ba42-e570c0b16dcb)
+  )
   (junction (at 165.1 121.92) (diameter 0) (color 0 0 0 0)
     (uuid b99b5a99-9eac-41e7-b478-484c3766f198)
-  )
-  (junction (at 172.72 68.58) (diameter 0) (color 0 0 0 0)
-    (uuid ba3864de-dd56-4acf-8404-9a55dfd7a0a5)
   )
   (junction (at 130.81 101.6) (diameter 0) (color 0 0 0 0)
     (uuid bdf99f21-7344-4f0b-806c-471f3aeb7c38)
   )
   (junction (at 172.72 83.82) (diameter 0) (color 0 0 0 0)
     (uuid bdfc825c-7ac8-4c50-aed1-717e7c786cfe)
-  )
-  (junction (at 130.81 68.58) (diameter 0) (color 0 0 0 0)
-    (uuid c57d209c-616e-4250-b805-12b085e17364)
   )
   (junction (at 130.81 121.92) (diameter 0) (color 0 0 0 0)
     (uuid e49d2044-b437-4aba-a34c-164400f14202)
@@ -917,7 +931,7 @@
   (symbol (lib_id "Device:R_US") (at 172.72 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03506130-9d88-4d9c-ad22-c302cf953d5f)
-    (property "Reference" "R87" (at 174.4472 77.5716 0)
+    (property "Reference" "R68" (at 174.4472 77.5716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 174.4472 79.883 0)
@@ -926,7 +940,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 173.736 78.994 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 172.72 78.74 0)
+    (property "Datasheet" "~" (at 172.72 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 174.4472 75.0316 0)
@@ -935,12 +949,12 @@
     (pin "1" (uuid cca8d0d8-d757-4136-a04c-cc47107182c4))
     (pin "2" (uuid 3a2adf66-79a8-418e-aeb8-83b71b2978cd))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R87") (unit 1)
+          (reference "R68") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R64") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -949,7 +963,7 @@
   (symbol (lib_id "mainboard:BSS138DWQ-7") (at 166.37 114.3 0) (mirror y) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 068537eb-19b5-43c2-a1fa-b0fc53cc0414)
-    (property "Reference" "Q17" (at 162.433 113.1316 0)
+    (property "Reference" "Q18" (at 162.433 113.1316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSS138DWQ-7" (at 170.18 119.38 0)
@@ -968,12 +982,12 @@
     (pin "4" (uuid b4809fd4-00a5-4f10-b1bf-8c66efe561e0))
     (pin "5" (uuid 6734c523-2660-43af-9004-6b8e05e6c781))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q17") (unit 2)
+          (reference "Q18") (unit 2)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q13") (unit 2)
+          (reference "Q11") (unit 2)
         )
       )
     )
@@ -991,18 +1005,18 @@
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 131.7752 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 130.81 118.11 0)
+    (property "Datasheet" "~" (at 130.81 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7e3ebaa5-f92a-4f20-89d7-2e5cd0b93ac5))
     (pin "2" (uuid fa41badb-02bb-456a-a299-207b711c60d9))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
           (reference "C46") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "C33") (unit 1)
+          (reference "C31") (unit 1)
         )
       )
     )
@@ -1011,7 +1025,7 @@
   (symbol (lib_id "mainboard-rescue:MBT2222ADW1T1-Transistor_BJT-mainboard-rescue") (at 125.73 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29796def-9154-41c8-87b8-36b82da45deb)
-    (property "Reference" "Q16" (at 125.73 105.0544 90)
+    (property "Reference" "Q15" (at 125.73 105.0544 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MMDT5551-7-F" (at 125.73 107.3404 90)
@@ -1030,12 +1044,12 @@
     (pin "4" (uuid 719eec32-e4e2-4c7f-8562-bc179d8fbdf5))
     (pin "5" (uuid a7495af5-3fb6-4923-8194-35690a2320b7))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q16") (unit 1)
+          (reference "Q15") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q12") (unit 1)
+          (reference "Q8") (unit 1)
         )
       )
     )
@@ -1044,7 +1058,7 @@
   (symbol (lib_id "Device:R_US") (at 119.38 93.98 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 32fdc694-2933-4da7-a992-50f5f69d631c)
-    (property "Reference" "R80" (at 118.11 88.9 90)
+    (property "Reference" "R69" (at 118.11 88.9 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "680" (at 118.11 91.44 90)
@@ -1053,7 +1067,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 119.126 94.996 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 119.38 93.98 0)
+    (property "Datasheet" "~" (at 119.38 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 119.38 93.98 0)
@@ -1062,12 +1076,12 @@
     (pin "1" (uuid 7134e052-9715-4444-b7a0-6121e925c68c))
     (pin "2" (uuid 75797fbd-3c76-4f01-b161-b4edb486c6bf))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R80") (unit 1)
+          (reference "R69") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R57") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -1076,7 +1090,7 @@
   (symbol (lib_id "Device:R_US") (at 130.81 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3712acca-bc06-40f6-ac06-b70dc4b9aaa6)
-    (property "Reference" "R82" (at 132.5372 77.5716 0)
+    (property "Reference" "R67" (at 132.5372 77.5716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 132.5372 79.883 0)
@@ -1085,7 +1099,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 131.826 78.994 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 130.81 78.74 0)
+    (property "Datasheet" "~" (at 130.81 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 132.5372 75.0316 0)
@@ -1094,12 +1108,12 @@
     (pin "1" (uuid f533bc4d-bd37-44a6-9486-0f0e7c9ed863))
     (pin "2" (uuid 9fc7ac44-cb8c-4b0f-a19b-9c4d4ecd6ffd))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R82") (unit 1)
+          (reference "R67") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R59") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
@@ -1108,7 +1122,7 @@
   (symbol (lib_id "Device:R_US") (at 130.81 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4b4b5818-ee72-4166-a7e6-6dc590199f42)
-    (property "Reference" "R83" (at 132.5372 106.7816 0)
+    (property "Reference" "R73" (at 132.5372 106.7816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "200K" (at 132.5372 109.093 0)
@@ -1117,7 +1131,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 131.826 108.204 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 130.81 107.95 0)
+    (property "Datasheet" "~" (at 130.81 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 132.5372 104.2416 0)
@@ -1126,12 +1140,12 @@
     (pin "1" (uuid 4079376d-d7b2-480d-ac76-f762ed67f872))
     (pin "2" (uuid 501850eb-f7b7-4728-b957-d98737253052))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R83") (unit 1)
+          (reference "R73") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R60") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
@@ -1140,7 +1154,7 @@
   (symbol (lib_id "Device:R_US") (at 125.73 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4e7f077b-b549-4a6c-88a8-b7e8876537d4)
-    (property "Reference" "R81" (at 124.0282 71.2216 0)
+    (property "Reference" "R65" (at 124.0282 71.2216 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 124.0282 73.533 0)
@@ -1149,7 +1163,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 126.746 72.644 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 125.73 72.39 0)
+    (property "Datasheet" "~" (at 125.73 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 124.0282 68.6816 0)
@@ -1158,12 +1172,12 @@
     (pin "1" (uuid f4136950-38cb-4981-9884-4447a479e935))
     (pin "2" (uuid c04676dc-af89-4568-9231-c9d886469934))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R81") (unit 1)
+          (reference "R65") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R58") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -1172,7 +1186,7 @@
   (symbol (lib_id "mainboard:BSS138DWQ-7") (at 124.46 114.3 0) (mirror y) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f23647d-7f4e-41ec-9a1d-b64348e65cd5)
-    (property "Reference" "Q15" (at 120.523 113.1316 0)
+    (property "Reference" "Q17" (at 120.523 113.1316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSS138DWQ-7" (at 128.27 119.38 0)
@@ -1191,12 +1205,12 @@
     (pin "4" (uuid 80460131-c12d-4932-b0d3-7bf69986d2e4))
     (pin "5" (uuid 284e576a-a2a3-4117-9e56-f6f9d8ef48d7))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q15") (unit 2)
+          (reference "Q17") (unit 2)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q11") (unit 2)
+          (reference "Q10") (unit 2)
         )
       )
     )
@@ -1205,7 +1219,7 @@
   (symbol (lib_id "mainboard:BSS138DWQ-7") (at 109.22 109.22 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f2c770d-5b7b-433f-a7c8-42db6d6866e5)
-    (property "Reference" "Q15" (at 105.283 108.0516 0)
+    (property "Reference" "Q17" (at 105.283 108.0516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSS138DWQ-7" (at 123.19 120.65 0)
@@ -1224,12 +1238,12 @@
     (pin "4" (uuid 6313c3e6-5643-427d-8b01-96c542f82aa2))
     (pin "5" (uuid c6ad4e57-ad18-43a8-b97a-d272e7dee7c7))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q15") (unit 1)
+          (reference "Q17") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q11") (unit 1)
+          (reference "Q10") (unit 1)
         )
       )
     )
@@ -1238,7 +1252,7 @@
   (symbol (lib_id "mainboard-rescue:MBT2222ADW1T1-Transistor_BJT-mainboard-rescue") (at 167.64 81.28 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 62cdd274-0d0e-480b-b013-205cd337f91d)
-    (property "Reference" "Q18" (at 167.64 87.249 90)
+    (property "Reference" "Q16" (at 167.64 87.249 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MMDT5551-7-F" (at 158.75 78.74 90)
@@ -1257,12 +1271,12 @@
     (pin "4" (uuid 6ce4ad54-abcf-4bc4-a227-491806a3ec39))
     (pin "5" (uuid a85debce-cf07-4346-bc7e-2ec70e125bdd))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q18") (unit 2)
+          (reference "Q16") (unit 2)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q14") (unit 2)
+          (reference "Q9") (unit 2)
         )
       )
     )
@@ -1271,7 +1285,7 @@
   (symbol (lib_id "mainboard:BSS138DWQ-7") (at 151.13 109.22 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 69363177-53f3-4972-92ed-ea2e25fcc788)
-    (property "Reference" "Q17" (at 147.193 108.0516 0)
+    (property "Reference" "Q18" (at 147.193 108.0516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSS138DWQ-7" (at 165.1 120.65 0)
@@ -1290,12 +1304,12 @@
     (pin "4" (uuid d7dd9e8c-f642-4069-9b86-783e2ceeb5f7))
     (pin "5" (uuid 42016235-16d5-457e-aef3-a00fadfdb094))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q17") (unit 1)
+          (reference "Q18") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q13") (unit 1)
+          (reference "Q11") (unit 1)
         )
       )
     )
@@ -1304,7 +1318,7 @@
   (symbol (lib_id "mainboard-rescue:MBT2222ADW1T1-Transistor_BJT-mainboard-rescue") (at 167.64 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75674ae0-b1bf-4c29-b26b-9cf08ea1e0a5)
-    (property "Reference" "Q18" (at 167.64 105.0544 90)
+    (property "Reference" "Q16" (at 167.64 105.0544 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MMDT5551-7-F" (at 167.64 107.3404 90)
@@ -1323,12 +1337,12 @@
     (pin "4" (uuid 50cffb10-e672-4598-9fe3-b72dc5dcb60f))
     (pin "5" (uuid 00624a02-092d-4373-bd85-582d5a4515ac))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q18") (unit 1)
+          (reference "Q16") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q14") (unit 1)
+          (reference "Q9") (unit 1)
         )
       )
     )
@@ -1337,7 +1351,7 @@
   (symbol (lib_id "Device:R_US") (at 167.64 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7acc2d97-206f-4abe-8fbd-c5107cbb67be)
-    (property "Reference" "R86" (at 165.9382 71.2216 0)
+    (property "Reference" "R66" (at 165.9382 71.2216 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 165.9382 73.533 0)
@@ -1346,7 +1360,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 168.656 72.644 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 167.64 72.39 0)
+    (property "Datasheet" "~" (at 167.64 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 165.9382 68.6816 0)
@@ -1355,12 +1369,12 @@
     (pin "1" (uuid ef0df03c-3aeb-49f9-ab29-d823bb501191))
     (pin "2" (uuid 55afbacd-7f25-4459-a8c8-e7cd74c41cfb))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R86") (unit 1)
+          (reference "R66") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R63") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -1369,7 +1383,7 @@
   (symbol (lib_id "Device:R_US") (at 118.11 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7d0055d8-110d-4a4c-93e4-b4718fa3724f)
-    (property "Reference" "R79" (at 114.3 102.87 0)
+    (property "Reference" "R71" (at 114.3 102.87 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 113.03 105.41 0)
@@ -1378,7 +1392,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 119.126 105.664 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 118.11 105.41 0)
+    (property "Datasheet" "~" (at 118.11 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 114.3 100.33 0)
@@ -1387,12 +1401,12 @@
     (pin "1" (uuid 61614cee-b370-4b29-a238-fc28a54dab71))
     (pin "2" (uuid fa247a02-09cf-4c05-85a9-48d63936ee00))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R79") (unit 1)
+          (reference "R71") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R56") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
     )
@@ -1410,55 +1424,27 @@
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 173.6852 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 172.72 118.11 0)
+    (property "Datasheet" "~" (at 172.72 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 71a41c53-c356-43b2-b77e-cfa4fd361a0d))
     (pin "2" (uuid 69adadb9-ff3c-4ce2-814d-b306f29ff7c0))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
           (reference "C47") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "C34") (unit 1)
+          (reference "C32") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "mainboard:3.3V") (at 130.81 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9b67ab7f-7f4d-4aff-98f7-2f616926b8e6)
-    (property "Reference" "#P+06" (at 130.81 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "3.3V" (at 130.81 64.77 0)
-      (effects (font (size 1.4986 1.4986)))
-    )
-    (property "Footprint" "" (at 130.81 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 130.81 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 805a692a-8a1c-4d5e-b6e4-5ecd40e54e5e))
-    (instances
-      (project "FP Interface Card"
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "#P+06") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "#P+02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "mainboard:3.3V") (at 160.02 101.6 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 160.02 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9dd69121-1a8b-43f4-9c2e-6db2fd66841b)
-    (property "Reference" "#P+07" (at 160.02 101.6 0)
+    (property "Reference" "#P+09" (at 160.02 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3.3V" (at 158.75 97.79 0)
@@ -1472,12 +1458,12 @@
     )
     (pin "1" (uuid fca04b66-501f-460c-929a-8838666950c5))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "#P+07") (unit 1)
+          (reference "#P+09") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "#P+03") (unit 1)
+          (reference "#P+05") (unit 1)
         )
       )
     )
@@ -1500,7 +1486,7 @@
     )
     (pin "1" (uuid 8845a9b5-70de-4703-abef-0cf4642e6f81))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
           (reference "#GND04") (unit 1)
         )
@@ -1514,7 +1500,7 @@
   (symbol (lib_id "Device:R_US") (at 215.9 116.84 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a94ce22a-3446-4d5a-82fd-e87391d9e92a)
-    (property "Reference" "R89" (at 212.09 115.57 90)
+    (property "Reference" "R75" (at 212.09 115.57 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 218.44 115.57 90)
@@ -1523,18 +1509,18 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 215.646 117.856 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 215.9 116.84 0)
+    (property "Datasheet" "~" (at 215.9 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1c96276a-7f62-4405-997a-dc960dd25ccd))
     (pin "2" (uuid 1cdb8e70-b0aa-4754-a51a-aa3e6642e932))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R89") (unit 1)
+          (reference "R75") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R66") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
     )
@@ -1543,7 +1529,7 @@
   (symbol (lib_id "mainboard-rescue:MBT2222ADW1T1-Transistor_BJT-mainboard-rescue") (at 125.73 81.28 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ac972580-0ab7-4cbf-a154-92c24eb3927a)
-    (property "Reference" "Q16" (at 125.73 87.249 90)
+    (property "Reference" "Q15" (at 125.73 87.249 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MMDT5551-7-F" (at 116.84 78.74 90)
@@ -1562,12 +1548,12 @@
     (pin "4" (uuid bd9ded4e-6205-4746-b96f-7303fc882475))
     (pin "5" (uuid 9864f7b6-c884-4209-842f-19d93e75445f))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "Q16") (unit 2)
+          (reference "Q15") (unit 2)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "Q12") (unit 2)
+          (reference "Q8") (unit 2)
         )
       )
     )
@@ -1576,7 +1562,7 @@
   (symbol (lib_id "Device:R_US") (at 215.9 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8371c0b-fb4e-42af-96de-23d456572321)
-    (property "Reference" "R90" (at 212.09 119.38 90)
+    (property "Reference" "R76" (at 212.09 119.38 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 218.44 119.38 90)
@@ -1585,18 +1571,18 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 215.646 121.666 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 215.9 120.65 0)
+    (property "Datasheet" "~" (at 215.9 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3a473a10-f8a1-4800-8b1f-d549d3850c2e))
     (pin "2" (uuid 55d817c4-f250-4bc7-b23e-0ca315130066))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R90") (unit 1)
+          (reference "R76") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R67") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
     )
@@ -1605,7 +1591,7 @@
   (symbol (lib_id "Device:R_US") (at 160.02 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bddd93d5-6bcf-4a37-8f3c-1979a6faa688)
-    (property "Reference" "R84" (at 156.21 102.87 0)
+    (property "Reference" "R72" (at 156.21 102.87 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 154.94 105.41 0)
@@ -1614,7 +1600,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 161.036 105.664 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 160.02 105.41 0)
+    (property "Datasheet" "~" (at 160.02 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 156.21 100.33 0)
@@ -1623,12 +1609,12 @@
     (pin "1" (uuid f61794ba-080e-4f4d-b57e-1b6790262f23))
     (pin "2" (uuid 0834b41d-f6f1-43e2-8520-e7638fd21ba6))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R84") (unit 1)
+          (reference "R72") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R61") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -1637,7 +1623,7 @@
   (symbol (lib_id "Device:R_US") (at 161.29 93.98 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cae392c2-2d07-4fc1-8f85-b82c4fe627c7)
-    (property "Reference" "R85" (at 160.02 88.9 90)
+    (property "Reference" "R70" (at 160.02 88.9 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "680" (at 160.02 91.44 90)
@@ -1646,7 +1632,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 161.036 94.996 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 161.29 93.98 0)
+    (property "Datasheet" "~" (at 161.29 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 161.29 93.98 0)
@@ -1655,21 +1641,52 @@
     (pin "1" (uuid 5fb22c80-622c-45c7-bfb5-3c4cd8613d37))
     (pin "2" (uuid 7529cedc-d209-42ac-b386-cba9d0efe418))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R85") (unit 1)
+          (reference "R70") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R62") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "mainboard:3.3V") (at 118.11 101.6 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 172.72 68.58 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e23385b7-c54d-45f8-9033-afdc8a9b28c3)
+    (property "Reference" "#PWR08" (at 172.72 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 172.72 64.9755 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 172.72 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 172.72 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ddf167a8-a2cd-4547-8772-565735229c92))
+    (instances
+      (project "payload-interface-board"
+        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df"
+          (reference "#PWR08") (unit 1)
+        )
+        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
+          (reference "#PWR0117") (unit 1)
+        )
+        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
+          (reference "#PWR0118") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 118.11 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e482d328-8e85-4308-9b34-a9cc0d5843cf)
-    (property "Reference" "#P+05" (at 118.11 101.6 0)
+    (property "Reference" "#P+08" (at 118.11 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3.3V" (at 116.84 97.79 0)
@@ -1683,12 +1700,12 @@
     )
     (pin "1" (uuid 8e62e53a-50cb-4606-a861-ac07ad9b29ee))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "#P+05") (unit 1)
+          (reference "#P+08") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "#P+01") (unit 1)
+          (reference "#P+04") (unit 1)
         )
       )
     )
@@ -1711,7 +1728,7 @@
     )
     (pin "1" (uuid 0677197f-925d-49ae-b672-407868493e87))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
           (reference "#GND03") (unit 1)
         )
@@ -1725,7 +1742,7 @@
   (symbol (lib_id "Device:R_US") (at 172.72 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f2541c63-f916-4eec-8e16-fa49e5de1e82)
-    (property "Reference" "R88" (at 174.4472 106.7816 0)
+    (property "Reference" "R74" (at 174.4472 106.7816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "200K" (at 174.4472 109.093 0)
@@ -1734,7 +1751,7 @@
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 173.736 108.204 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 172.72 107.95 0)
+    (property "Datasheet" "~" (at 172.72 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Description" "" (at 174.4472 104.2416 0)
@@ -1743,40 +1760,43 @@
     (pin "1" (uuid 1a840357-9053-4b4b-be6c-a0a8639680d7))
     (pin "2" (uuid 758b305f-0305-4e16-82d4-edbfc902ed8c))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "R88") (unit 1)
+          (reference "R74") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "R65") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "mainboard:3.3V") (at 172.72 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f9eef5f5-1630-4662-9c6e-3e5da710800a)
-    (property "Reference" "#P+08" (at 172.72 68.58 0)
+  (symbol (lib_id "power:+3.3V") (at 130.81 68.58 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f4f7b1a7-796c-47fa-95fd-bd02406ff96c)
+    (property "Reference" "#PWR08" (at 130.81 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "3.3V" (at 172.72 64.77 0)
-      (effects (font (size 1.4986 1.4986)))
+    (property "Value" "+3.3V" (at 130.81 64.9755 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 172.72 68.58 0)
+    (property "Footprint" "" (at 130.81 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 172.72 68.58 0)
+    (property "Datasheet" "" (at 130.81 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 43c32901-d015-4288-b0d6-0ddbe0645e37))
+    (pin "1" (uuid 53a288b2-42e8-4a26-a1f1-111c74e49d88))
     (instances
-      (project "FP Interface Card"
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
-          (reference "#P+08") (unit 1)
+      (project "payload-interface-board"
+        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df"
+          (reference "#PWR08") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/51f2d4b3-6068-40f6-b19f-12cc4569573f"
-          (reference "#P+04") (unit 1)
+          (reference "#PWR0115") (unit 1)
+        )
+        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/60a3e3f0-4d0a-42d5-9dae-542c30f8587f"
+          (reference "#PWR0116") (unit 1)
         )
       )
     )

@@ -5,6 +5,7 @@
   (paper "A4")
 
   (title_block
+    (rev "B")
     (company "Sierra Lobo INC")
   )
 
@@ -71,6 +72,12 @@
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Sim.Device" "D" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Sim.Pins" "1=K 2=A" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "diode" (at 0 0 0)
@@ -524,7 +531,7 @@
     (stroke (width 0) (type default))
     (uuid 2c95b9a6-9c71-4108-9cde-57ddfdd2dd19)
   )
-  (wire (pts (xy 72.39 45.72) (xy 97.79 45.72))
+  (wire (pts (xy 72.39 45.72) (xy 87.63 45.72))
     (stroke (width 0) (type default))
     (uuid 315dc115-412d-4725-8180-bec4d6d36308)
   )
@@ -560,7 +567,7 @@
     (stroke (width 0) (type default))
     (uuid 4fd9bc4f-0ae3-42d4-a1b4-9fb1b2a0a7fd)
   )
-  (wire (pts (xy 82.55 31.75) (xy 90.17 31.75))
+  (wire (pts (xy 48.26 31.75) (xy 90.17 31.75))
     (stroke (width 0) (type default))
     (uuid 51042014-7537-4674-ad3c-ccfa35d6c7e9)
   )
@@ -659,6 +666,10 @@
   (wire (pts (xy 86.36 132.08) (xy 102.87 132.08))
     (stroke (width 0) (type default))
     (uuid 9c607e49-ee5c-4e85-a7da-6fede9912412)
+  )
+  (wire (pts (xy 95.25 45.72) (xy 97.79 45.72))
+    (stroke (width 0) (type default))
+    (uuid a222e647-f7e3-4d12-8cec-a9f605ca1669)
   )
   (wire (pts (xy 85.09 120.65) (xy 81.28 120.65))
     (stroke (width 0) (type default))
@@ -822,7 +833,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid e73127d9-0036-4c40-b3c5-627af8e7f517)
   )
-  (hierarchical_label "LED_VCC" (shape input) (at 82.55 31.75 180) (fields_autoplaced)
+  (hierarchical_label "LED_VCC" (shape input) (at 48.26 31.75 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid fca6cbd1-4930-4448-a4c2-3229b42b9dcf)
   )
@@ -830,7 +841,7 @@
   (symbol (lib_id "Device:R_US") (at 102.87 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061dfdb16)
-    (property "Reference" "R27" (at 104.5972 97.8916 0)
+    (property "Reference" "R13" (at 104.5972 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 104.5972 100.203 0)
@@ -845,9 +856,9 @@
     (pin "1" (uuid df2bd5ca-a7ad-4bb3-8974-866fae5a04a5))
     (pin "2" (uuid 3e312ab9-4b25-4f40-93fc-50661d3fad9b))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R27") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -856,7 +867,7 @@
   (symbol (lib_id "Device:D") (at 102.87 109.22 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061dfe643)
-    (property "Reference" "D2" (at 104.902 108.0516 90)
+    (property "Reference" "D4" (at 104.902 108.0516 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "RED" (at 104.902 110.363 90)
@@ -865,15 +876,21 @@
     (property "Footprint" "SLI-Backplane-Blank-Card-KiCad:APA2107x" (at 102.87 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "APA2107LSECK/J3-PRV" (at 102.87 109.22 0)
+    (property "Datasheet" "~" (at 102.87 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 102.87 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 102.87 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7d007914-0c98-45bd-8159-1efaad0d44c5))
     (pin "2" (uuid a7c8edbf-0a82-4bc3-b0c3-25ad9cf54400))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "D2") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -882,7 +899,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 100.33 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061dfecc7)
-    (property "Reference" "Q7" (at 105.1814 119.4816 0)
+    (property "Reference" "Q4" (at 105.1814 119.4816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BC847BM3T5G" (at 105.1814 121.793 0)
@@ -898,9 +915,9 @@
     (pin "2" (uuid 9963f83e-ddc2-497a-9423-fa5964a87b65))
     (pin "3" (uuid 194dc030-e773-4a8a-9cdf-d5bccfc1eb2d))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "Q7") (unit 1)
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -909,7 +926,7 @@
   (symbol (lib_id "Device:R_US") (at 88.9 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e03a36)
-    (property "Reference" "R24" (at 88.9 115.443 90)
+    (property "Reference" "R17" (at 88.9 115.443 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.5k" (at 88.9 117.7544 90)
@@ -924,9 +941,9 @@
     (pin "1" (uuid 110efee2-dede-4f1f-ac4b-d4f4a51cd19e))
     (pin "2" (uuid bf066127-c31b-4ec5-ae5e-b082334d4487))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R24") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -935,7 +952,7 @@
   (symbol (lib_id "Device:R_US") (at 151.13 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e053c1)
-    (property "Reference" "R29" (at 152.8572 97.8916 0)
+    (property "Reference" "R14" (at 152.8572 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 152.8572 100.203 0)
@@ -950,9 +967,9 @@
     (pin "1" (uuid 020b5f2b-d751-451b-b791-e2e51f2fc6ff))
     (pin "2" (uuid 276d8aed-23b0-4d2e-81ff-fc2aec49b67b))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R29") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -961,7 +978,7 @@
   (symbol (lib_id "Device:D") (at 151.13 109.22 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e053cb)
-    (property "Reference" "D3" (at 153.162 108.0516 90)
+    (property "Reference" "D5" (at 153.162 108.0516 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "YELLOW" (at 153.162 110.363 90)
@@ -970,15 +987,21 @@
     (property "Footprint" "SLI-Backplane-Blank-Card-KiCad:APA2107x" (at 151.13 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "APA2107SYCK/J3-PRV" (at 151.13 109.22 0)
+    (property "Datasheet" "~" (at 151.13 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 151.13 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 151.13 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5f6663a4-da61-4dc9-a32b-792bf01b0d7c))
     (pin "2" (uuid 9c23841d-6ec5-439d-bef6-c49c653f6a45))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "D3") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -987,7 +1010,7 @@
   (symbol (lib_id "Device:R_US") (at 137.16 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e053e3)
-    (property "Reference" "R28" (at 137.16 115.443 90)
+    (property "Reference" "R18" (at 137.16 115.443 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.5k" (at 137.16 117.7544 90)
@@ -1002,9 +1025,9 @@
     (pin "1" (uuid 3305f0e5-d8ea-4745-bb05-f2341f9a7bfe))
     (pin "2" (uuid 972e61ff-fa80-472d-a039-f69ba260725a))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R28") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -1013,7 +1036,7 @@
   (symbol (lib_id "Device:R_US") (at 199.39 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e0dc62)
-    (property "Reference" "R32" (at 201.1172 97.8916 0)
+    (property "Reference" "R15" (at 201.1172 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 201.1172 100.203 0)
@@ -1028,9 +1051,9 @@
     (pin "1" (uuid 973bc9d0-445a-44c7-91ee-2deaf66168d5))
     (pin "2" (uuid 799003ab-8950-425c-98ee-d6c989597efc))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R32") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -1039,7 +1062,7 @@
   (symbol (lib_id "Device:D") (at 199.39 109.22 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e0dc6c)
-    (property "Reference" "D4" (at 201.422 108.0516 90)
+    (property "Reference" "D6" (at 201.422 108.0516 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "GREEN" (at 201.422 110.363 90)
@@ -1048,15 +1071,21 @@
     (property "Footprint" "SLI-Backplane-Blank-Card-KiCad:APA2107x" (at 199.39 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "APA2107CGCK" (at 199.39 109.22 0)
+    (property "Datasheet" "~" (at 199.39 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 199.39 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 199.39 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 896a131c-ff27-4c70-bfeb-81d287a0318e))
     (pin "2" (uuid f38fa778-16be-43df-b7b2-c3b27aeabba6))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "D4") (unit 1)
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -1065,7 +1094,7 @@
   (symbol (lib_id "Device:R_US") (at 185.42 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e0dc84)
-    (property "Reference" "R31" (at 185.42 115.443 90)
+    (property "Reference" "R19" (at 185.42 115.443 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.5k" (at 185.42 117.7544 90)
@@ -1080,9 +1109,9 @@
     (pin "1" (uuid 0cabefd3-31a0-43bb-8ee3-d8e0232fc866))
     (pin "2" (uuid 54eb1513-3bc6-4c40-bca5-0650430edb77))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R31") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -1091,7 +1120,7 @@
   (symbol (lib_id "Device:R_US") (at 248.92 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e12996)
-    (property "Reference" "R35" (at 250.6472 97.8916 0)
+    (property "Reference" "R16" (at 250.6472 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 250.6472 100.203 0)
@@ -1106,9 +1135,9 @@
     (pin "1" (uuid 75d2ef36-be07-4763-814d-858a62af98a6))
     (pin "2" (uuid 26fbf0e3-4d63-4197-afdb-e1fa430e0e17))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R35") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -1117,7 +1146,7 @@
   (symbol (lib_id "Device:D") (at 248.92 109.22 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e129a0)
-    (property "Reference" "D5" (at 250.952 108.0516 90)
+    (property "Reference" "D7" (at 250.952 108.0516 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "ORANGE" (at 250.952 110.363 90)
@@ -1126,15 +1155,21 @@
     (property "Footprint" "SLI-Backplane-Blank-Card-KiCad:APA2107x" (at 248.92 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "APA2107SECK/J4-PRV" (at 248.92 109.22 0)
+    (property "Datasheet" "~" (at 248.92 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 248.92 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 248.92 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e4e2f161-c613-48ba-879a-ed97ff4a42b7))
     (pin "2" (uuid b6a7ba1a-44b7-48d5-b795-cf59e2bba5d7))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "D5") (unit 1)
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -1143,7 +1178,7 @@
   (symbol (lib_id "Device:R_US") (at 234.95 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e129b8)
-    (property "Reference" "R34" (at 234.95 115.443 90)
+    (property "Reference" "R20" (at 234.95 115.443 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.5k" (at 234.95 117.7544 90)
@@ -1158,9 +1193,9 @@
     (pin "1" (uuid 50b053ff-82d5-4478-aa02-889e2343ef3d))
     (pin "2" (uuid d53da219-a2d3-4861-8a05-7491d4587470))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "R34") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -1169,7 +1204,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 148.59 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e1c573)
-    (property "Reference" "Q8" (at 153.4414 119.4816 0)
+    (property "Reference" "Q5" (at 153.4414 119.4816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BC847BM3T5G" (at 153.4414 121.793 0)
@@ -1185,9 +1220,9 @@
     (pin "2" (uuid 68ad7d35-2249-402f-9c7c-3d9a4e20c6aa))
     (pin "3" (uuid 6da8abbc-7fb7-4f78-a018-4d52f4a55f1b))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "Q8") (unit 1)
+          (reference "Q5") (unit 1)
         )
       )
     )
@@ -1196,7 +1231,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 196.85 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e1dc0b)
-    (property "Reference" "Q9" (at 201.7014 119.4816 0)
+    (property "Reference" "Q6" (at 201.7014 119.4816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BC847BM3T5G" (at 201.7014 121.793 0)
@@ -1212,9 +1247,9 @@
     (pin "2" (uuid 48462e33-71f0-4a5b-b16f-9edc06b58e1b))
     (pin "3" (uuid 39549b81-c677-4a21-9a96-d34cf2636099))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "Q9") (unit 1)
+          (reference "Q6") (unit 1)
         )
       )
     )
@@ -1223,7 +1258,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 246.38 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061e1f560)
-    (property "Reference" "Q10" (at 251.2314 119.4816 0)
+    (property "Reference" "Q7" (at 251.2314 119.4816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BC847BM3T5G" (at 251.2314 121.793 0)
@@ -1239,9 +1274,9 @@
     (pin "2" (uuid 4a28e7ca-bc8d-4804-85dc-f3b8fe4b0d82))
     (pin "3" (uuid afd6ef85-51b5-48ec-8a9f-96c46da4fa80))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "Q10") (unit 1)
+          (reference "Q7") (unit 1)
         )
       )
     )
@@ -1264,7 +1299,7 @@
     )
     (pin "1" (uuid 23b26218-aa62-4ab3-874b-a53bd71d5972))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
           (reference "H1") (unit 1)
         )
@@ -1289,7 +1324,7 @@
     )
     (pin "1" (uuid b31b70e1-3e60-4a02-ad4b-ae44d37a7244))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
           (reference "H2") (unit 1)
         )
@@ -1314,7 +1349,7 @@
     )
     (pin "1" (uuid 33e5d043-1e43-455a-9649-c5bd31d5f046))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
           (reference "H3") (unit 1)
         )
@@ -1339,7 +1374,7 @@
     )
     (pin "1" (uuid 4d843028-f08c-4cdd-bb75-fda5d2ff9e3b))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
           (reference "H4") (unit 1)
         )
@@ -1350,7 +1385,7 @@
   (symbol (lib_id "Device:C") (at 41.91 101.6 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061fb2ca5)
-    (property "Reference" "C6" (at 41.91 95.1992 90)
+    (property "Reference" "C7" (at 41.91 95.1992 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 41.91 97.5106 90)
@@ -1365,9 +1400,9 @@
     (pin "1" (uuid 9f059396-e534-4686-a6e8-c3dd820afe0e))
     (pin "2" (uuid 62647cab-b42f-40b0-acb4-79508a859054))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "C6") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -1376,7 +1411,7 @@
   (symbol (lib_id "Device:C") (at 41.91 111.76 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061fb32f6)
-    (property "Reference" "C7" (at 41.91 105.3592 90)
+    (property "Reference" "C8" (at 41.91 105.3592 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 41.91 107.6706 90)
@@ -1391,9 +1426,9 @@
     (pin "1" (uuid 1175b6d3-e9c9-4476-b4f3-4fbb5182e973))
     (pin "2" (uuid d234ec39-d698-41ad-a8ca-6a3497922047))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "C7") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -1402,7 +1437,7 @@
   (symbol (lib_id "Device:C") (at 41.91 121.92 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061fb5a5f)
-    (property "Reference" "C8" (at 41.91 115.5192 90)
+    (property "Reference" "C9" (at 41.91 115.5192 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 41.91 117.8306 90)
@@ -1417,9 +1452,9 @@
     (pin "1" (uuid edf6ad10-cc82-43d1-bc0a-205510d82ef2))
     (pin "2" (uuid 35bd1608-0c93-4600-90a6-8aa52c7b7803))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "C8") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -1428,7 +1463,7 @@
   (symbol (lib_id "Device:C") (at 41.91 132.08 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061fb81d1)
-    (property "Reference" "C9" (at 41.91 125.6792 90)
+    (property "Reference" "C10" (at 41.91 125.6792 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 41.91 127.9906 90)
@@ -1443,9 +1478,35 @@
     (pin "1" (uuid ff00eda2-f304-45f0-b78b-4302e7a07fb4))
     (pin "2" (uuid dd74d397-cc7c-48ec-8f6a-181f55c7872c))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "C9") (unit 1)
+          (reference "C10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_US") (at 91.44 45.72 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2faa2bd4-0bdd-4c33-921c-6eefcb015832)
+    (property "Reference" "R81" (at 86.36 44.45 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1k" (at 95.25 44.45 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 91.186 46.736 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 91.44 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cf37bef4-3e3b-4c70-8350-c1ed069ffa2a))
+    (pin "2" (uuid bae02283-bd58-4840-844f-47ea69ca441a))
+    (instances
+      (project "payload-interface-board"
+        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
+          (reference "R81") (unit 1)
         )
       )
     )
@@ -1457,7 +1518,7 @@
     (property "Reference" "D208" (at 130.81 47.7393 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SK68XX-EC3210R" (at 125.73 50.2793 0)
+    (property "Value" "SK6805-EC3210R" (at 123.19 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "payload-interface-board:SK6812-EC3210F-RA" (at 140.97 53.34 0)
@@ -1476,9 +1537,9 @@
           (reference "D208") (unit 1)
         )
       )
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "D10") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -1487,7 +1548,7 @@
   (symbol (lib_id "Device:C") (at 132.08 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5532ac11-0ff9-4cd0-9289-145dd67a9156)
-    (property "Reference" "C11" (at 125.6792 35.56 90)
+    (property "Reference" "C6" (at 125.6792 35.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 127.9906 35.56 90)
@@ -1502,9 +1563,9 @@
     (pin "1" (uuid cc1a369a-ebe4-4f3d-86a0-9c8d940043da))
     (pin "2" (uuid c20bc0f0-2f48-4849-8632-4acd92da7138))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "C11") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -1516,7 +1577,7 @@
     (property "Reference" "D208" (at 96.52 47.7393 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SK68XX-EC3210R" (at 91.44 50.2793 0)
+    (property "Value" "SK6805-EC3210R" (at 88.9 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "payload-interface-board:SK6812-EC3210F-RA" (at 106.68 53.34 0)
@@ -1535,9 +1596,9 @@
           (reference "D208") (unit 1)
         )
       )
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "D9") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -1546,7 +1607,7 @@
   (symbol (lib_id "Device:C") (at 90.17 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d4bfd422-1df9-4ed5-aa6f-3c25786fb798)
-    (property "Reference" "C10" (at 83.7692 35.56 90)
+    (property "Reference" "C5" (at 83.7692 35.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 86.0806 35.56 90)
@@ -1561,9 +1622,9 @@
     (pin "1" (uuid ad77b961-98fe-4eab-b372-b50ba5ba1297))
     (pin "2" (uuid 059a7e34-8427-40e1-90aa-c284b6fe490d))
     (instances
-      (project "FP Interface Card"
+      (project "payload-interface-board"
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/00000000-0000-0000-0000-000061d3502c"
-          (reference "C10") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
