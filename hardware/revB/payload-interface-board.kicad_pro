@@ -56,11 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "malformed_courtyard|41074000|130220000|892166a3-61c8-4631-9645-35e60090108b|00000000-0000-0000-0000-000000000000",
-        "malformed_courtyard|93074000|130220000|892166a3-61c8-4631-9645-35e60090108b|00000000-0000-0000-0000-000000000000",
-        "malformed_courtyard|93074000|152220000|892166a3-61c8-4631-9645-35e60090108b|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -427,7 +423,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "FP Interface Card.kicad_pro",
+    "filename": "payload-interface-board.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -501,7 +497,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "${KICAD7_SLI_LIBS}/templates/sli_b_non_prop.kicad_wks",
     "plot_directory": "pdf/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
@@ -518,68 +514,52 @@
       ""
     ],
     [
-      "5b8330c6-72aa-4625-a65f-d4d55ae3e3e8",
-      "Full Bridge 2"
+      "9a405ebb-5c40-4de0-9346-a2ae3aaabc82",
+      "Z MTQ Driver"
     ],
     [
-      "00000000-0000-0000-0000-000061d3502c",
-      "Backplane Card Interface"
-    ],
-    [
-      "66fbc293-b490-4097-aa2e-a081509eef04",
-      "MT Drivers"
-    ],
-    [
-      "51f2d4b3-6068-40f6-b19f-12cc4569573f",
+      "bfd654f3-9829-4abb-9c50-981cc02ff78c",
       "I2C-Protection-2"
     ],
     [
-      "e1ca2fa4-878d-4b56-b8ce-583c4e6d5869",
-      "Full Bridge 1"
+      "d37b3655-4247-47b6-9578-a41f570787b9",
+      "X MTQ Driver"
     ],
     [
-      "b12d78bf-aa15-467a-b4b1-b3adfb073398",
-      "Sense Amp 1"
+      "146b684a-f73b-4eb1-adfe-30f1964810bc",
+      "Y MTQ Driver"
     ],
     [
-      "c0544bb0-133b-49a1-b8f9-e77504492c11",
-      "Sense Amp 2"
+      "7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad",
+      "Load Switch 1"
     ],
     [
-      "09e89dab-acb9-41af-be20-2de645189f17",
-      "Full Bridge 3"
+      "8888f9b5-1ed7-43cb-9174-e948cce171c0",
+      "Load Switch 2"
     ],
     [
-      "055667d1-a090-4d44-b096-566c0357f041",
-      "Sense Amp 3"
+      "9613f8ce-52d8-40c4-ba4b-e6be8fea7c63",
+      "Load Switch 3"
     ],
     [
-      "0d41b933-8bc8-4fa4-b49a-44e034cc3fe8",
-      "5V Amp 2"
+      "97d778d4-4fd0-40a5-8197-b6d6589701fa",
+      "MCU"
     ],
     [
-      "c3b42a4a-1ed4-4106-b1d3-48a0726c5c74",
-      "5V Amp 1"
-    ],
-    [
-      "769431f6-f572-418f-b1fe-b44bee132392",
-      "IMU"
-    ],
-    [
-      "3274ec9e-d72c-43b3-8471-ed8a89a9c8d1",
-      "5V Amp 3"
-    ],
-    [
-      "320a8e64-419f-4835-b9a3-8fec5eb2b133",
-      "Payload Interface"
-    ],
-    [
-      "60a3e3f0-4d0a-42d5-9dae-542c30f8587f",
+      "d89f8e4e-c1fd-4f02-b05f-cca141c3d91a",
       "I2C-Protection-1"
     ],
     [
-      "dd622a02-7df1-4bf4-8b18-36d28830c650",
-      "Pico"
+      "24d21d3f-37df-43db-a302-5a6c43abae48",
+      "MTQ Control"
+    ],
+    [
+      "a27ea2ff-08eb-4ecc-b5af-cb12ea10190a",
+      "3V3 DIGITAL"
+    ],
+    [
+      "debe7760-b450-488d-89c8-2e29c33d310a",
+      "Temp Sensors"
     ]
   ],
   "text_variables": {}
