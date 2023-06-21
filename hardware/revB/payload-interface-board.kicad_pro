@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0508
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -117,9 +117,9 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.15239999999999998,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.254,
+        "min_clearance": 0.2032,
+        "min_connection": 0.2032,
+        "min_copper_edge_clearance": 0.508,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
@@ -130,8 +130,8 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.2032,
-        "min_via_annular_width": 0.0508,
-        "min_via_diameter": 0.254,
+        "min_via_annular_width": 0.17779999999999999,
+        "min_via_diameter": 0.4064,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -140,8 +140,8 @@
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 5,
           "td_on_pad_in_zone": false,
-          "td_onpadsmd": true,
-          "td_onroundshapesonly": false,
+          "td_onpadsmd": false,
+          "td_onroundshapesonly": true,
           "td_ontrackend": false,
           "td_onviapad": true
         }
@@ -179,9 +179,7 @@
         0.0,
         0.2032,
         0.254,
-        0.381,
-        0.508,
-        0.635
+        0.508
       ],
       "via_dimensions": [
         {
@@ -189,12 +187,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.508,
+          "diameter": 0.6096,
           "drill": 0.254
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
@@ -459,10 +453,10 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "FP Interface Card.step",
+      "step": "doc/FP Interface Card.step",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "${KICAD7_SLI_LIBS}/templates/sli_b_non_prop.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -514,22 +508,6 @@
       ""
     ],
     [
-      "9a405ebb-5c40-4de0-9346-a2ae3aaabc82",
-      "Z MTQ Driver"
-    ],
-    [
-      "bfd654f3-9829-4abb-9c50-981cc02ff78c",
-      "I2C-Protection-2"
-    ],
-    [
-      "d37b3655-4247-47b6-9578-a41f570787b9",
-      "X MTQ Driver"
-    ],
-    [
-      "146b684a-f73b-4eb1-adfe-30f1964810bc",
-      "Y MTQ Driver"
-    ],
-    [
       "7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad",
       "Load Switch 1"
     ],
@@ -538,28 +516,8 @@
       "Load Switch 2"
     ],
     [
-      "9613f8ce-52d8-40c4-ba4b-e6be8fea7c63",
-      "Load Switch 3"
-    ],
-    [
-      "97d778d4-4fd0-40a5-8197-b6d6589701fa",
-      "MCU"
-    ],
-    [
       "d89f8e4e-c1fd-4f02-b05f-cca141c3d91a",
       "I2C-Protection-1"
-    ],
-    [
-      "24d21d3f-37df-43db-a302-5a6c43abae48",
-      "MTQ Control"
-    ],
-    [
-      "a27ea2ff-08eb-4ecc-b5af-cb12ea10190a",
-      "3V3 DIGITAL"
-    ],
-    [
-      "debe7760-b450-488d-89c8-2e29c33d310a",
-      "Temp Sensors"
     ]
   ],
   "text_variables": {}

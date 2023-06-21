@@ -5,8 +5,10 @@
   (paper "A4")
 
   (title_block
-    (title "Foras Promineo Payload Interface Board")
+    (title "Foras Promineo Payload Interface")
     (rev "B")
+    (comment 1 "CH")
+    (comment 2 "CH")
   )
 
   (lib_symbols
@@ -512,15 +514,15 @@
   )
 
   (hierarchical_label "VIN" (shape input) (at 74.93 73.66 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+    (effects (font (size 1.524 1.524)) (justify right))
     (uuid 1f569acd-48d2-4e10-aea0-df8dee7f162a)
   )
   (hierarchical_label "EN" (shape input) (at 74.93 100.33 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+    (effects (font (size 1.524 1.524)) (justify right))
     (uuid 4623cea7-05e3-4e40-a1fd-a89f1201423c)
   )
   (hierarchical_label "VOUT" (shape output) (at 223.52 73.66 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
+    (effects (font (size 1.524 1.524)) (justify left))
     (uuid e826f7c8-805b-484c-af25-2aa096534f21)
   )
 
@@ -533,7 +535,7 @@
     (property "Value" "100k" (at 125.73 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 125.984 99.314 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 125.984 99.314 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 125.73 100.33 0)
@@ -548,6 +550,9 @@
     (property "Description" "" (at 125.73 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Mfr. Part No" "" (at 125.73 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid dd888c7e-1692-4284-8689-2c4d3e2440d7))
     (pin "2" (uuid 7506e357-c380-4ac5-958d-b3daec9554a0))
     (instances
@@ -556,13 +561,10 @@
           (reference "R5") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "R69") (unit 1)
+          (reference "R36") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "R73") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "R77") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -577,7 +579,7 @@
     (property "Value" "0.1uF" (at 146.05 83.185 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 143.2052 85.09 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 143.2052 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 142.24 81.28 0)
@@ -600,13 +602,10 @@
           (reference "C5") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "C30") (unit 1)
+          (reference "C13") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "C31") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "C32") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -621,7 +620,7 @@
     (property "Value" "1k" (at 158.75 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 157.226 86.614 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 157.226 86.614 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 156.21 86.36 0)
@@ -635,13 +634,10 @@
           (reference "R4") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "R67") (unit 1)
+          (reference "R34") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "R71") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "R75") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -669,13 +665,10 @@
           (reference "#PWR012") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "#PWR072") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "#PWR073") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "#PWR074") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -713,13 +706,10 @@
           (reference "Q1") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "Q10") (unit 1)
+          (reference "Q4") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "Q13") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "Q16") (unit 1)
+          (reference "Q7") (unit 1)
         )
       )
     )
@@ -749,13 +739,10 @@
           (reference "Q2") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "Q12") (unit 1)
+          (reference "Q6") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "Q15") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "Q18") (unit 1)
+          (reference "Q9") (unit 1)
         )
       )
     )
@@ -770,7 +757,7 @@
     (property "Value" "1k" (at 168.91 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 167.386 86.614 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 167.386 86.614 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 166.37 86.36 0)
@@ -784,13 +771,10 @@
           (reference "R4") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "R68") (unit 1)
+          (reference "R35") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "R72") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "R76") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -828,13 +812,10 @@
           (reference "Q1") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "Q11") (unit 1)
+          (reference "Q5") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "Q14") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "Q17") (unit 1)
+          (reference "Q8") (unit 1)
         )
       )
     )
@@ -849,7 +830,7 @@
     (property "Value" "100k" (at 134.62 83.185 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 138.176 81.534 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 138.176 81.534 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 137.16 81.28 0)
@@ -872,13 +853,10 @@
           (reference "R3") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/7434567b-e3d3-4b0f-9e9c-75cfe7b5f5ad"
-          (reference "R66") (unit 1)
+          (reference "R33") (unit 1)
         )
         (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/8888f9b5-1ed7-43cb-9174-e948cce171c0"
-          (reference "R70") (unit 1)
-        )
-        (path "/dc2801a1-d539-4721-b31f-fe196b9f13df/24d21d3f-37df-43db-a302-5a6c43abae48/9613f8ce-52d8-40c4-ba4b-e6be8fea7c63"
-          (reference "R74") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
