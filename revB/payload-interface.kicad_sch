@@ -1,0 +1,15 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid d274bdbf-8407-4789-a27b-d9276d1e4990)
+
+  (paper "B")
+
+  (title_block
+    (title "Foras Promineo Payload Interface Board")
+    (rev "B")
+  )
+
+  (lib_symbols
+  )
+
+)
